@@ -104,8 +104,7 @@ div.Hab {
     justify-content: center;
     flex-wrap: wrap;
 }
-/*Front-end*/
-div.front {
+div.caixaHab {
     background-color: rgba(31, 29, 29, 0.699);
     border: 2px solid rgba(169, 169, 169, 0.637);
     backdrop-filter: blur(8px);
@@ -114,24 +113,25 @@ div.front {
     margin-right: 100px;
     padding-bottom: 25px;
     transition: all 0.3s ease;
+    margin-top: 50px;
 }
-div.front:hover {
+div.caixaHab:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     box-shadow: 0 0 15px blueviolet;
 }
-div.front h3 {
+div.caixaHab h3 {
     text-align: left;
     padding: 2% 0% 2% 5%;
 }
-div.listaFront {
+div.listaHab {
     display: flex;
     justify-content: space-around;
 }
-div.listaFront div {
+div.listaHab div {
     cursor: pointer;
 }
-div.html {
+div.lingHab {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
@@ -139,212 +139,13 @@ div.html {
     border-radius: 20px;
     transition: all 0.3s ease;
 }
-div.html:hover {
+div.lingHab:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     box-shadow: 0 0 5px blueviolet;
     background-color: rgba(78, 77, 77, 0.5);
 }
-img.htmlimg {
-    width: 50%;
-}
-div.css {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.css:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.cssimg {
-    width: 50%;
-}
-div.js {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.js:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.jsimg {
-    width: 50%;
-}
-/*Back-end*/
-div.back {
-    background-color: rgba(31, 29, 29, 0.699);
-    border: 2px solid rgba(169, 169, 169, 0.637);
-    backdrop-filter: blur(8px);
-    width: 30%;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.back:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 15px blueviolet;
-}
-div.back h3 {
-    text-align: left;
-    padding: 2% 0% 2% 5%;
-}
-div.listaBack {
-    display: flex;
-    justify-content: space-around;
-}
-div.listaBack div {
-    cursor: pointer;
-}
-div.java {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.java:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.javaimg {
-    width: 50%;
-}
-div.python {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.python:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.pythonimg {
-    width: 50%;
-}
-/*Banco de Dados*/
-div.bd {
-    background-color: rgba(31, 29, 29, 0.699);
-    border: 2px solid rgba(169, 169, 169, 0.637);
-    backdrop-filter: blur(8px);
-    width: 30%;
-    border-radius: 20px;
-    margin-right: 100px;
-    padding-bottom: 25px;
-    margin-top: 30px;
-    transition: all 0.3s ease;
-}
-div.bd:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 15px blueviolet;
-}
-div.bd h3 {
-    text-align: left;
-    padding: 2% 0% 2% 5%;
-}
-div.listabd {
-    display: flex;
-    justify-content: space-around;
-}
-div.listabd div {
-    cursor: pointer;
-}
-div.mysql {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.mysql:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.mysqlimg {
-    width: 50%;
-}
-/*Ferramentas*/
-div.ferramentas {
-    background-color: rgba(31, 29, 29, 0.699);
-    border: 2px solid rgba(169, 169, 169, 0.637);
-    backdrop-filter: blur(8px);
-    width: 30%;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    margin-top: 30px;
-    transition: all 0.3s ease;
-}
-div.ferramentas:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 15px blueviolet;
-}
-div.ferramentas h3 {
-    text-align: left;
-    padding: 2% 0% 2% 5%;
-}
-div.listafr {
-    display: flex;
-    justify-content: space-around;
-}
-div.listafr div {
-    cursor: pointer;
-}
-div.git {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.git:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.gitimg {
-    width: 50%;
-}
-div.jetb {
-    background-color: rgba(61, 59, 59, 0.534);
-    width: 20%;
-    text-align: center;
-    padding: 3px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-div.jetb:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    box-shadow: 0 0 5px blueviolet;
-    background-color: rgba(78, 77, 77, 0.5);
-}
-img.jetbimg {
+img.lingHabImg {
     width: 50%;
 }
 /*Contato*/
@@ -375,7 +176,6 @@ div.descritivo2 {
   opacity: 1;
   transform: translate(-50%, -140%);
 }
-/*info*/
 div.info h3 {
     margin-top: 40px;
     text-align: center;
