@@ -148,6 +148,76 @@ div.lingHab:hover {
 img.lingHabImg {
     width: 50%;
 }
+/*Projetos*/
+section.projetos {
+    margin-top: 200px;
+}
+div.projetos {
+    text-align: center;
+}
+div.descritivo3 {
+    color: gray;
+    text-align: center;
+}
+div.projs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Projs*/
+div.caixaProj {
+    padding: 20px;
+    background-color: rgba(26, 25, 25, 0.5);
+    width: 15%;
+    border-radius: 20px;
+    border: 2px solid rgba(122, 122, 122, 0.5);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+div.caixaProj:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px blueviolet;
+}
+div.caixaProj img {
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+}
+div.caixaProj h4 {
+    text-align: center;
+}
+div.lingUsad {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div.ling {
+    background-color: rgba(26, 25, 25, 0.5);
+    width: 15%;
+    border-radius: 20px;
+    border: 2px solid rgba(122, 122, 122, 0.5);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+div.ling h5 {
+    margin: 0;
+    padding: 10px;
+}
+div.ver {
+    padding: 2%;
+    background-color: blueviolet;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    margin-left: 23%;
+}
+div.ver a {
+    text-decoration: none;
+    color: white;
+}
 /*Contato*/
 section.contato {
     margin-top: 200px;
@@ -176,6 +246,7 @@ div.descritivo2 {
   opacity: 1;
   transform: translate(-50%, -140%);
 }
+/*Infos*/
 div.info h3 {
     margin-top: 40px;
     text-align: center;
