@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,13 +37,17 @@ nav {
 ul.nav {
     display: flex;
     list-style: none;
+    font-size: larger;
+    font-family: cursive;
 }
-ul.nav li {
+ul.nav li a {
     margin: 0 10px;
     transition: 400ms;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
-ul.nav li:hover {
+ul.nav li a:hover {
     color: blueviolet;
 }
 /**/
@@ -65,6 +72,18 @@ div.descritivo {
     width: 25%;
     color: gray;
 }
+div.cr {
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 10%;
+    text-align: center;
+    margin-left: 18%;
+}
+div.cr a {
+    text-decoration: none;
+    color: white;
+}
 img.minhaFoto {
     width: 20%;
     border-radius: 50%;
@@ -80,9 +99,10 @@ section.habilidades {
 div.minhasHab {
     text-align: center;
 }
-ul.Hab {
+div.Hab {
     display: flex;
-    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /*Front-end*/
 div.front {
@@ -91,45 +111,73 @@ div.front {
     backdrop-filter: blur(8px);
     width: 30%;
     border-radius: 20px;
+    margin-right: 100px;
+    padding-bottom: 25px;
+    transition: all 0.3s ease;
+}
+div.front:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px blueviolet;
 }
 div.front h3 {
     text-align: left;
     padding: 2% 0% 2% 5%;
 }
-ul.listaFront {
+div.listaFront {
     display: flex;
-    list-style: none;
+    justify-content: space-around;
 }
-ul.listaFront li {
-    margin: 0 25px;
+div.listaFront div {
     cursor: pointer;
 }
-li.html {
+div.html {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
     padding: 3px;
     border-radius: 20px;
+    transition: all 0.3s ease;
+}
+div.html:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
 }
 img.htmlimg {
     width: 50%;
 }
-li.css {
+div.css {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
     padding: 3px;
     border-radius: 20px;
+    transition: all 0.3s ease;
+}
+div.css:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
 }
 img.cssimg {
     width: 50%;
 }
-li.js {
+div.js {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
     padding: 3px;
     border-radius: 20px;
+    transition: all 0.3s ease;
+}
+div.js:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
 }
 img.jsimg {
     width: 50%;
@@ -141,48 +189,185 @@ div.back {
     backdrop-filter: blur(8px);
     width: 30%;
     border-radius: 20px;
+    transition: all 0.3s ease;
+}
+div.back:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px blueviolet;
 }
 div.back h3 {
     text-align: left;
     padding: 2% 0% 2% 5%;
 }
-ul.listaBack {
+div.listaBack {
     display: flex;
-    list-style: none;
+    justify-content: space-around;
 }
-ul.listaBack li {
-    margin: 0 25px;
+div.listaBack div {
     cursor: pointer;
 }
-li.html {
+div.java {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
     padding: 3px;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
-img.htmlimg {
+div.java:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
+}
+img.javaimg {
     width: 50%;
 }
-li.css {
+div.python {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
     padding: 3px;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
-img.cssimg {
+div.python:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
+}
+img.pythonimg {
     width: 50%;
 }
-li.js {
+/*Banco de Dados*/
+div.bd {
+    background-color: rgba(31, 29, 29, 0.699);
+    border: 2px solid rgba(169, 169, 169, 0.637);
+    backdrop-filter: blur(8px);
+    width: 30%;
+    border-radius: 20px;
+    margin-right: 100px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+div.bd:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px blueviolet;
+}
+div.bd h3 {
+    text-align: left;
+    padding: 2% 0% 2% 5%;
+}
+div.listabd {
+    display: flex;
+    justify-content: space-around;
+}
+div.listabd div {
+    cursor: pointer;
+}
+div.mysql {
     background-color: rgba(61, 59, 59, 0.534);
     width: 20%;
     text-align: center;
     padding: 3px;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
-img.jsimg {
+div.mysql:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
+}
+img.mysqlimg {
     width: 50%;
+}
+/*Ferramentas*/
+div.ferramentas {
+    background-color: rgba(31, 29, 29, 0.699);
+    border: 2px solid rgba(169, 169, 169, 0.637);
+    backdrop-filter: blur(8px);
+    width: 30%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+div.ferramentas:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px blueviolet;
+}
+div.ferramentas h3 {
+    text-align: left;
+    padding: 2% 0% 2% 5%;
+}
+div.listafr {
+    display: flex;
+    justify-content: space-around;
+}
+div.listafr div {
+    cursor: pointer;
+}
+div.git {
+    background-color: rgba(61, 59, 59, 0.534);
+    width: 20%;
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+div.git:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
+}
+img.gitimg {
+    width: 50%;
+}
+div.jetb {
+    background-color: rgba(61, 59, 59, 0.534);
+    width: 20%;
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+div.jetb:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px blueviolet;
+    background-color: rgba(78, 77, 77, 0.5);
+}
+img.jetbimg {
+    width: 50%;
+}
+/*Contato*/
+section.contato {
+    margin-top: 200px;
+}
+div.contato {
+    text-align: center;
+}
+div.descritivo2 {
+    color: gray;
+    text-align: center;
+}
+/*info*/
+div.info h3 {
+    margin-top: 80px;
+    text-align: center;
+}
+div.email {
+    padding: 20px;
+    background-color: rgba(14, 14, 14, 0.5);
+    width: 20%;
+    border-radius: 30px;
 }
 /**/
 /*FOOTER*/
