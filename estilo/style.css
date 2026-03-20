@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 180px;
 }
 body {
     background-color: black;
@@ -114,7 +115,8 @@ div.caixaHab {
     backdrop-filter: blur(8px);
     width: 30%;
     border-radius: 20px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding-bottom: 25px;
     transition: all 0.3s ease;
     margin-top: 50px;
@@ -273,7 +275,8 @@ div.caixact {
     width: 20%;
     border-radius: 30px;
     border: 2px solid rgba(122, 122, 122, 0.5);
-    margin-bottom: 15px;
+    margin-top: 7.5;
+    margin-bottom: 7.5px;
     transition: all 0.3s ease;
 }
 div.caixact:hover {
