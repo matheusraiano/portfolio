@@ -100,6 +100,47 @@ img.minhaFoto {
     right: 20%;
     box-shadow: 0px 0px 10px 5px blueviolet
 }
+/*SobreMim*/
+section.sobre {
+    margin-top: 450px;
+}
+div.tSobre {
+    text-align: center;
+}
+div.sobremim {
+    display: flex;
+    justify-content: center;
+}
+div.extras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+article.textoSobre {
+    width: 40%;
+    margin-right: 150px;
+    color: gray;
+}
+div.caixaSobreMim {
+    background-color: rgba(31, 29, 29, 0.699);
+    border: 2px solid rgba(169, 169, 169, 0.637);
+    backdrop-filter: blur(8px);
+    padding: 10%;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+div.caixaSobreMim:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px blueviolet;
+}
+div.caixaSobreMim p {
+    color: gray;
+}
 /*Habilidades*/
 section.habilidades {
     margin-top: 200px;
@@ -111,6 +152,18 @@ div.Hab {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+div.listaNome {
+    display: flex;
+    justify-content: start;
+}
+div.listaNome h3 {
+    padding: 2% 0% 2% 5%;
+}
+div.listaNome img {
+    width: 10%;
+    height: 10%;
+    margin: 2% 0% 2% 5%;
 }
 div.caixaHab {
     background-color: rgba(31, 29, 29, 0.699);
@@ -128,10 +181,6 @@ div.caixaHab:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     box-shadow: 0 0 15px blueviolet;
-}
-div.caixaHab h3 {
-    text-align: left;
-    padding: 2% 0% 2% 5%;
 }
 div.listaHab {
     display: flex;
