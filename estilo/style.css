@@ -507,6 +507,9 @@ div.final p {
 /*TABLET*/
 /**/
 @media (max-width: 1024px) {
+    html {
+    scroll-padding-top: 100px;
+    }
     /*HEADER-TABLET*/
     header {
         margin-bottom: 120px;
@@ -614,6 +617,9 @@ div.final p {
 /*CELULAR*/
 /**/
 @media (max-width: 768px) {
+    html {
+    scroll-padding-top: 80px;
+    }
     /*HEADER-CELL*/
     header {
         margin-bottom: 100px;
@@ -721,6 +727,9 @@ div.final p {
 /*MOBILE-P*/
 /**/
 @media (max-width: 480px) {
+    html {
+    scroll-padding-top: 60px;
+    }
     /*HEADER-MOBILE-P*/
     header {
         margin-bottom: 80px;
