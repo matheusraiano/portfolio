@@ -9,6 +9,16 @@
     </head>
     <body id="topo">
         <!---->
+        <div id="loading">
+            <div class="loading-content">
+                <h2>Matheus <strong>Raiano</strong></h2>
+                <div class="barra-container">
+                    <div class="barra"></div>
+                </div>
+                <p class="loading-texto">Carregando...</p>
+            </div>
+        </div>
+        <!---->
         <header>
             <section>
                 <div class="nome">
@@ -23,6 +33,7 @@
                         <li><a href="#hab">Habilidades</a></li>
                         <li><a href="#proj">Projetos</a></li>
                         <li><a href="#cont">Contato</a></li>
+                        <button id="toggleTema" title="Alternar tema">🌙</button>
                     </ul>
                 </nav>
             </section>
@@ -30,21 +41,25 @@
         <!---->
         <main>
             <section id="home" class="principal">
-                <div class="apresentacao">
-                    <h1>Olá, eu sou <strong>Matheus</strong> <br> <strong>Raiano Santos</strong> <br>
-                    Desenvolvedor Fullstack</h1>
+                <div class="tam">
+                    <div class="apresentacao">
+                        <h1>Olá, eu sou <strong>Matheus</strong> <br> <strong>Raiano Santos</strong> <br>
+                        Desenvolvedor Fullstack</h1>
+                    </div>
+                    <div class="descritivo">
+                        <p>
+                            Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por tecnologia
+                            e em busca de uma oportunidade na área de <strong>desenvolvimento</strong>.
+                        </p>
+                    </div>
+                    <div class="crr">
+                        <div class="cr">
+                            <a href="docs/Matheus Raiano Santos - CR.pdf" download="Matheus Raiano Santos - CR.pdf" type="application/pdf">Baixar Currículo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="descritivo">
-                    <p>
-                        Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por tecnologia 
-                        e em busca de uma oportunidade na área de <strong>desenvolvimento</strong>.
-                    </p>
-                </div>
-                <div class="cr">
-                    <a href="docs/Matheus Raiano Santos - CR.pdf" download="Matheus Raiano Santos - CR.pdf" type="application/pdf">Baixar Currículo</a>
-                </div>
-                <div>
-                    <img class="minhaFoto" src="midias/image.png">
+                <div class="tam">
+                    <img class="minhaFoto" src="midias/image.png" alt="Minha Foto">
                 </div>
             </section>
             <section id="sobr" class="sobre">
@@ -152,15 +167,24 @@
                     </div>
                 </div>
             </section>
-            <section id="proj" class="projetos">
+            <section id="proj" class="projetoos">
                 <div class="projetos">
                     <h2>Meus <strong>Projetos</strong></h2>
                 </div>
                 <div class="descritivo3">
                     <p>Aqui você verá alguns de meus projetos.</p>
                 </div>
+                <div class="filtros">
+                    <button class="filtro ativo" data-filtro="todos">Todos</button>
+                    <button class="filtro" data-filtro="C++">C++</button>
+                    <button class="filtro" data-filtro="HTML">HTML</button>
+                    <button class="filtro" data-filtro="CSS">CSS</button>
+                    <button class="filtro" data-filtro="JavaScript">JavaScript</button>
+                    <button class="filtro" data-filtro="Java">Java</button>
+                    <button class="filtro" data-filtro="MySQL">MySQL</button>
+                </div>
                 <div class="projs">
-                    <div class="caixaProj">
+                    <div class="caixaProj" data-techs="C++" >
                         <img src="https://raw.githubusercontent.com/matheusraiano/AA-SISTEMA/refs/heads/main/V1.1/docs/AA-SISTEMA-V1.1.png" alt="Foto do projeto">
                         <h4>AA-SISTEMA</h4>
                         <div class="lingUsad">
@@ -172,7 +196,7 @@
                             <a href="https://github.com/matheusraiano/AA-SISTEMA" target="_blank" type="external">Ver projeto!</a>
                         </div>
                     </div>
-                    <div class="caixaProj">
+                    <div class="caixaProj" data-techs="HTML CSS JavaScript Java MySQL Redes" >
                         <img src="" alt="Foto do projeto">
                         <h4>Projeto Integrador - Faculdade 1ºS</h4>
                         <div class="lingUsad">
@@ -211,22 +235,22 @@
                 <div class="info">
                     <h3>Informações de Contato:</h3>
                     <div class="infos">
-                        <div class="caixact">
+                        <div class="caixaCt">
                             <h4>Email</h4>
                             <p>Envie um email diretamente</p>
                             <p class="copiar" data-texto="mraianosantos@gmail.com"><strong>mraianosantos@gmail.com</strong></p>
                         </div>
-                        <div class="caixact">
+                        <div class="caixaCt">
                             <h4>LinkedIn</h4>
                             <p>Conecte-se profissionalmente</p>
                             <p class="copiar" data-texto="https://www.linkedin.com/in/matheus-raiano-santos-31a2a5350/"><strong>Meu perfil profissional!</strong></p>
                         </div>
-                        <div class="caixact">
+                        <div class="caixaCt">
                             <h4>Github</h4>
                             <p>Olhe meus repositórios</p>
                             <p class="copiar" data-texto="https://github.com/matheusraiano"><strong>Meu perfil!</strong></p>
                         </div>
-                        <div class="caixact">
+                        <div class="caixaCt">
                             <h4>Localização</h4>
                             <p>Disponível para trabalho remoto</p>
                             <p class="copiar" data-texto="https://maps.app.goo.gl/p2Maqiw3E4XBYYXL9"><strong>São Bernardo do Campo, SP - Brasil</strong></p>
