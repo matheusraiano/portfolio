@@ -511,10 +511,6 @@ div.final p {
     header {
         margin-bottom: 120px;
     }
-    section.inicio {
-        display: flex;
-        gap: 11%;
-    }
     #menuNav {
         position: fixed;
         top: 0;
@@ -622,10 +618,6 @@ div.final p {
     header {
         margin-bottom: 100px;
     }
-    section.inicio {
-        display: flex;
-        gap: 8%;
-    }
     #menuNav {
         position: fixed;
         top: 0;
@@ -701,7 +693,7 @@ div.final p {
         margin-top: 80px;
     }
     div.caixaHab {
-        width: 85%;
+        width: 90%;
     }
     div.lingHab {
         min-width: 60px;
