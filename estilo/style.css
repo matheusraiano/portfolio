@@ -107,6 +107,17 @@ div.nome a {
 div.nome a:hover {
     color: blueviolet;
 }
+#menuToggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--text);
+    color: var(--text);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
 nav {
     position: absolute;
     top: 25%;
@@ -491,4 +502,257 @@ div.final h5 {
 div.final p {
     padding: 0 0 5px 0;
     margin: 0;
+}
+/**/
+/*TABLET*/
+/**/
+@media (max-width: 1024px) {
+    /*HEADER-TABLET*/
+    #menuNav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(15px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease;
+    }
+    #menuNav.aberto {
+        right: 0;
+    }
+    ul.nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #menuToggle {
+        display: block;
+    }
+    /*MAIN-TABLET*/
+    /*Apresentação*/
+    section.principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    div.tam {
+        width: 80%;
+    }
+    img.minhaFoto {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    div.descritivo {
+        width: 100%;
+        padding: 0;
+    }
+    div.crr {
+        width: 100%;
+        justify-content: center;
+    }
+    /*SobreMim*/
+    section.sobre {
+        margin-top: 120px;
+    }
+    div.sobremim {
+        flex-direction: column;
+        align-items: center;
+    }
+    article.textoSobre {
+        width: 80%;
+        margin-right: 0;
+        text-align: center;
+    }
+    div.extras {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    div.caixaSobreMim {
+        width: 40%;
+    }
+    /*Habilidades*/
+    section.habilidades {
+        margin-top: 120px;
+    }
+    div.caixaHab {
+        width: 42%;
+    }
+    div.lingHab {
+        min-width: 60px;
+    }
+    /*Projetos*/
+    section.projetoos {
+        margin-top: 120px;
+    }
+    div.caixaProj {
+        width: 40%;
+    }
+    /*Contatos*/
+    section.contato {
+        margin-top: 120px;
+    }
+    div.caixaCt {
+        width: 55%;
+    }
+    /*FOOTER-TABLET*/
+    footer {
+        margin-top: 120px;
+    }
+}
+/**/
+/*CELULAR*/
+/**/
+@media (max-width: 768px) {
+    /*HEADER-CELL*/
+    #menuNav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(15px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease;
+    }
+    #menuNav.aberto {
+        right: 0;
+    }
+    ul.nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #menuToggle {
+        display: block;
+    }
+    /*MAIN-CELL*/
+    /*Apresentação*/
+    section.principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    div.tam {
+        width: 90%;
+    }
+    img.minhaFoto {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+    div.descritivo {
+        width: 100%;
+        padding: 0;
+    }
+    div.crr {
+        width: 100%;
+        justify-content: center;
+    }
+    /*SobreMim*/
+    section.sobre {
+        margin-top: 80px;
+    }
+    div.sobremim {
+        flex-direction: column;
+        align-items: center;
+    }
+    article.textoSobre {
+        width: 90%;
+        margin-right: 0;
+        text-align: center;
+    }
+    div.extras {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    div.caixaSobreMim {
+        width: 40%;
+    }
+    /*Habilidades*/
+    section.habilidades {
+        margin-top: 80px;
+    }
+    div.caixaHab {
+        width: 85%;
+    }
+    div.lingHab {
+        min-width: 60px;
+    }
+    /*Projetos*/
+    section.projetoos {
+        margin-top: 80px;
+    }
+    div.caixaProj {
+        width: 70%;
+    }
+    /*Contatos*/
+    section.contato {
+        margin-top: 80px;
+    }
+    div.caixaCt {
+        width: 80%;
+    }
+    /*FOOTER-CELL*/
+    footer {
+        margin-top: 80px;
+    }
+}
+/**/
+/*MOBILE-P*/
+/**/
+@media (max-width: 480px) {
+    /*HEADER-MOBILE-P*/
+    #menuNav {
+        width: 85%;
+    }
+    /*MAIN-MOBILE-P*/
+    /*Apresentação*/
+    section.principal h1 {
+        font-size: 1.4rem;
+    }
+    img.minhaFoto {
+        width: 75%;
+    }
+    div.cr {
+        width: 80%;
+        padding: 12px;
+    }
+    /*SobreMim*/
+    article.textoSobre {
+        width: 95%;
+        font-size: 0.95rem;
+    }
+    div.caixaSobreMim {
+        width: 75%;
+    }
+    /*Habilidades*/
+    div.caixaHab {
+        width: 92%;
+    }
+    div.lingHab {
+        min-width: 55px;
+    }
+    /*Projetos*/
+    div.caixaProj {
+        width: 88%;
+    }
+    /*Contatos*/
+    div.caixaCt {
+        width: 88%;
+    }
+    /*FOOTER-MOBILE-P*/
 }

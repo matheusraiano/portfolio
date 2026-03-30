@@ -113,3 +113,22 @@ const intervalo = setInterval(() => {
         }, 400); // pequena pausa antes de sumir
     }
 }, 20); // 20ms * 100 = ~2 segundos no total
+
+const menuToggle = document.getElementById('menuToggle');
+const menuNav = document.getElementById('menuNav');
+
+menuToggle.addEventListener('click', () => {
+    menuNav.classList.toggle('aberto');
+
+    if (menuNav.classList.contains('aberto')) {
+        menuToggle.innerText = '✕';
+    } else {
+        menuToggle.innerText = '☰';
+    }
+});
+menuNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuNav.classList.remove('aberto');
+        menuToggle.innerText = '☰';
+    });
+});
