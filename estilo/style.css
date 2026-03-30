@@ -14,7 +14,6 @@ body {
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .fade-in.visivel {
     opacity: 1;
     transform: translateY(0);
@@ -27,8 +26,8 @@ body {
     --card-ling-hover: rgba(78, 77, 77, 0.5);
     --card-bg: rgba(31, 29, 29, 0.699);
     --card-border: rgba(169, 169, 169, 0.637);
+    --nav: rgba(0, 0, 0, 0.95);
 }
-
 [data-tema="claro"] {
     --bg: #f0f0f0;
     --text: #111;
@@ -37,6 +36,7 @@ body {
     --card-ling-hover: rgba(255, 255, 255, 0.8);
     --card-bg: rgba(224, 224, 224, 0.8);
     --card-border: rgba(0, 0, 0, 0.2);
+    --nav: rgba(75, 75, 75, 0.95);
 }
 #loading {
     position: fixed;
@@ -514,7 +514,7 @@ div.final p {
         right: -100%;
         width: 70%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.95);
+        background: var(--nav);
         backdrop-filter: blur(15px);
         display: flex;
         align-items: center;
@@ -618,7 +618,7 @@ div.final p {
         right: -100%;
         width: 70%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.95);
+        background: var(--nav);
         backdrop-filter: blur(15px);
         display: flex;
         align-items: center;
