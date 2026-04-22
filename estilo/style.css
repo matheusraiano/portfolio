@@ -400,7 +400,7 @@ div.ling {
 }
 div.ling:hover {
     opacity: 50%;
-    cursor: pointer;
+    cursor: grab;
 }
 div.ling h5 {
     margin: 0;
@@ -413,6 +413,10 @@ div.ver {
     width: 50%;
     text-align: center;
     margin-left: 23%;
+    transition: all 0.3s ease;
+}
+div.ver:hover {
+    transform: translateY(-5px);
 }
 div.ver a {
     text-decoration: none;
