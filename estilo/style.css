@@ -289,7 +289,7 @@ div.listaHab {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    row-gap: 20px;
 }
 div.listaHab div {
     cursor: pointer;
